@@ -18,7 +18,7 @@ def sortFiles(path):
     os.mkdir(os.path.join(path, "Images"))
     os.mkdir(os.path.join(path, "Others"))
     
-    #sorting functionk
+    #sorting function
     for filename in os.listdir(path):
                 f = os.path.join(path, filename)
 
@@ -51,7 +51,7 @@ def sortFiles(path):
 
                             shutil.move(f, new_path)
 
-                        elif f.endswith(".png") or f.endswith(".jpeg") or f.endswith(".webp") or f.endswith(".jpg"):
+                        elif f.endswith(".png") or f.endswith(".jpeg") or f.endswith(".webp") or f.endswith(".jpg")  or f.endswith(".gif"):
                             new_path = path + '/Images/' 
 
                             shutil.move(f, new_path)
