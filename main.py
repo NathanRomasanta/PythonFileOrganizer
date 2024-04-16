@@ -26,7 +26,7 @@ def sortFiles(path):
                 # checking if it is a file
                 if os.path.isfile(f):
                     try: 
-                        if f.endswith('.mp3'):
+                        if f.endswith('.mp3') or f.endswith(".wma") or f.endswith(".wav") or f.endswith(".aac"):
                             new_path = path + '\Music'
 
                             shutil.move(f, new_path)
@@ -36,7 +36,7 @@ def sortFiles(path):
 
                             shutil.move(f, new_path)
 
-                        elif f.endswith(".mp4"):
+                        elif f.endswith(".mp4") or f.endswith(".avi") or f.endswith(".mov") or f.endswith(".mkv"):
                             new_path = path + '\Videos' 
 
                             shutil.move(f, new_path)
@@ -46,7 +46,7 @@ def sortFiles(path):
 
                             shutil.move(f, new_path)
 
-                        elif f.endswith(".docx") or f.endswith(".pdf") or f.endswith(".ppt") or f.endswith(".xlsx"):
+                        elif f.endswith(".docx") or f.endswith(".pdf") or f.endswith(".ppt") or f.endswith(".xlsx")  or f.endswith(".doc") or f.endswith(".csv") or f.endswith(".xls"):
                             new_path = path + '\Documents' 
 
                             shutil.move(f, new_path)
