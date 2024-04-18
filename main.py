@@ -17,6 +17,7 @@ def sortFiles(path):
     os.mkdir(os.path.join(path, "Documents"))
     os.mkdir(os.path.join(path, "Images"))
     os.mkdir(os.path.join(path, "Others"))
+    os.mkdir(os.path.join(path, "Texts & Scripts"))
     
     #sorting function
     for filename in os.listdir(path):
@@ -31,7 +32,7 @@ def sortFiles(path):
 
                             shutil.move(f, new_path)
 
-                        elif f.endswith(".ai") or f.endswith(".psd") or f.endswith(".prproj") or f.endswith(".psb"):
+                        elif f.endswith(".ai") or f.endswith(".psd") or f.endswith(".prproj") or f.endswith(".psb") or f.endswith(".xd") or f.endswith(".fig") or f.endswith(".sketch"):
                             new_path = path + '\SourceFiles' 
 
                             shutil.move(f, new_path)
@@ -41,8 +42,8 @@ def sortFiles(path):
 
                             shutil.move(f, new_path)
 
-                        elif f.endswith(".txt"):
-                            new_path = path + '\Texts' 
+                        elif f.endswith(".txt") or f.endswith(".sql") or f.endswith(".java") or f.endswith(".py") or f.endswith(".cpp") or f.endswith(".cs"):
+                            new_path = path + '\Texts & Scripts' 
 
                             shutil.move(f, new_path)
 
