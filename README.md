@@ -32,11 +32,11 @@ This Python script serves as an organizer tool to help users to organize their f
     PythonFileOrganizer.py
     ```
 
-2. Follow the on-screen prompts to manage tasks, schedule events, and take notes.
+2. Follow the on-screen prompt.
 
 ## Dependencies:
 
-- Python 3.x
+- Python 3.0x
 - Required Python libraries (specified in requirements.txt)
 
 ## Contributing:
