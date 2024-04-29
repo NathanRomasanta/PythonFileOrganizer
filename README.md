@@ -14,7 +14,7 @@ This Python script serves as an organizer tool to help users to organize their f
 1. Clone the repository to your local machine:
 
     ```bash
-    git clone https://github.com/username/PythonFileOrganizer.git
+    git clone https://github.com/NathanRomasanta/PythonFileOrganizer.git
     ```
 
 2. Navigate to the project directory:
