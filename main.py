@@ -67,12 +67,7 @@ def sortFiles(path):
                     except Exception as e:
                         print(f"{e}")
 
-
-
-def test(path):
-     for file in  os.listdir(path):
-          print(file)
-    
+ 
 def main():
     
     directory = input("Enter Directory: ")
@@ -89,7 +84,7 @@ def main():
         choice = input("Are you sure you want to continue? (y/n): ")
 
         if choice.lower() == "y":
-               test(directory)
+               sortFiles(directory)
         else:
             exit
 
