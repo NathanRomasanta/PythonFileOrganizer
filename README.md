@@ -2,7 +2,7 @@
 
 ## Overview:
 
-This Python script serves as an organizer tool to help users to organize their files efficientylu.
+This Python script serves as an organizer tool to help users to organize their files efficiently.
 
 ## Features:
 
