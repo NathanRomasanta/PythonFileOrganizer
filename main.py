@@ -53,12 +53,12 @@ def sortFiles(path):
                             shutil.move(f, new_path)
 
                         elif f.endswith(".png") or f.endswith(".jpeg") or f.endswith(".webp") or f.endswith(".jpg")  or f.endswith(".gif"):
-                            new_path = path + '/Images/' 
+                            new_path = path + '\Images' 
 
                             shutil.move(f, new_path)
 
                         else:
-                            new_path = path + '/Others/' 
+                            new_path = path + '\Others' 
                             
                             shutil.move(f, new_path)
 
